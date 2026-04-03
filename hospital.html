@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiran Hospital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>CityCare Hospital</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#appointment">Appointment</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="overlay">
+        <h2>Your Health, Our Priority</h2>
+        <p>Book appointments easily with top doctors</p>
+        <button onclick="scrollToAppointment()">Book Appointment</button>
+    </div>
+</section>
+
+<!-- DOCTORS -->
+<section id="doctors">
+    <h2>Our Doctors</h2>
+
+    <div class="doctor-list">
+        <div class="doctor">
+            <h3>Dr. Alok Ranjan</h3>
+            <p>Cardiologist</p>
+        </div>
+
+        <div class="doctor">
+            <h3>Dr. Chintan B. Patel</h3>
+            <p>Bariatic</p>
+        </div>
+
+        <div class="doctor">
+            <h3>Dr. Harshad Joshi</h3>
+            <p>Orthopedic</p>
+        </div>
+    </div>
+</section>
+
+<!-- APPOINTMENT -->
+<section id="appointment">
+    <h2>Book Appointment</h2>
+
+    <form id="appointmentForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="number" placeholder="Age" required>
+
+        <select required>
+            <option value="">Select Doctor</option>
+            <option>Dr. Alok Ranjan </option>
+            <option>Dr. Chintan B. Patell</option>
+            <option>Dr. Harshad Joshi</option>
+        </select>
+
+        <input type="date" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="successMsg"></p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Emergency Contact</h2>
+    <p>📞 108</p>
+    <p>📍 Surat, India</p>
+</section>
+
+<script src="script.js"></script>
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <h3>✅ Appointment Confirmed</h3>
+        <p>Thank you for trusting us!</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
